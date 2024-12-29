@@ -1,3 +1,4 @@
+// string to number
 let score = "150"
 console.log(typeof(score))
 
