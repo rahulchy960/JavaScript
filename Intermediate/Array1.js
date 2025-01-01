@@ -7,21 +7,21 @@ console.log(myArr);
 
 // Array methods
 
-// myArr.push(6)
-// myArr.push(7)
+myArr.push(6)
+myArr.push(7)
 // console.log(myArr);
-// myArr.pop()
+myArr.pop()
 // console.log(myArr);
 
-// myArr.unshift(9)
+myArr.unshift(9)
 // console.log(myArr);
-// myArr.shift()
+myArr.shift()
 // console.log(myArr);
 
 // console.log(myArr.includes(9));
 // console.log(myArr.indexOf(3));
 
-// const newArr = myArr.join() // convert the array into a string
+const newArr = myArr.join() // convert the array into a string
 // console.log(myArr);
 // console.log(newArr);
 // console.log(typeof myArr);
@@ -30,7 +30,7 @@ console.log(myArr);
 
 // slice, splice : slice doesnot change the original array but splice changes
 
-console.log("A ", myArr);
+// console.log("A ", myArr);
 
 const myn1 = myArr.slice(1, 3)
 
