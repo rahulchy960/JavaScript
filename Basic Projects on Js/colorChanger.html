@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(to right, #121212, #181818, #1d1d1d, #222222, #282828);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            overflow-x: hidden;
+        }
+        h1{
+            margin: 20px;
+            padding: 20px;
+            color: antiquewhite;
+        }
+        .parent{
+            margin-top: 5em;
+            display: flex;
+            justify-content: center;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border: 2px solid #121212;
+        }
+        #color1{
+            background: #3498db;
+        }
+        #color2{
+            background: #34495e; 
+        }
+
+        #color3{
+            background-color: #8e44ad;
+        }
+        #color4{
+            background-color: #3a7e91;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Color Scheme Switcher</h1>
+    <div class="parent">
+        <div class="child" id="color1"></div>
+        <div class="child" id="color2"></div>
+        <div class="child" id="color3"></div>
+        <div class="child" id="color4"></div>
+    </div>
+</body>
+
+<script>
+    const colors = document.querySelectorAll('.child');
+    // console.log(colors);
+    const body = document.querySelector('body');
+    // console.log(body)
+    colors.forEach((color)=>{
+        // console.log(color);
+        color.addEventListener('click',(event)=>{
+            console.log(event);
+            console.log(event.target);
+            if(event.target.id === 'color1'){
+                body.style.background = '#3498db';
+            }
+            if(event.target.id === 'color2'){
+                body.style.backgroundColor = '#34495e';
+            }
+            if(event.target.id === 'color3'){
+                body.style.backgroundColor = '#8e44ad';
+            }
+            if(event.target.id === 'color4'){
+                body.style.backgroundColor = '#3a7e91';
+            }
+        })
+    });
+</script>
+
+</html>
